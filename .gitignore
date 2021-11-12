@@ -1,0 +1,5 @@
+## Node ##
+# Dependencias
+/node_modules
+#archivos basura de windows
+desktop.ini
