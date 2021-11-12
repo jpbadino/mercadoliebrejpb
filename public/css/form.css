@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.crear-form{
+    padding: 20%;
+}
+.control-form{
+    margin-bottom: 3%;
+}
+.control-form label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;/* ocupa toda la linea */
+}
+.control-form input,select{
+    width: 100%;
+    padding: 2%;
+}
+form button{
+    background-color: blue;
+    color: white;
+    font-size: 1.4rem;
+    border:none;
+    padding: 1%;
+    border-radius: 3%;
+}

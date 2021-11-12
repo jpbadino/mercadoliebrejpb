@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3259e664d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+
+    
+
+<body>
+    <!-- formulario -->
+   
+    <form action="#" method="post" class="crear-form">
+<!-- los form tiene dos atributtos, 
+    action:ruta a donde ira los datos
+    y method: GET o POST define como se envian los datos al servidor
+POST tiene la info segura-->
+        <div class="control-form">
+            <label>Nombre y Apellido</label>
+            <input type="text" name="nombreApellido" id="">
+            <!-- input type (password, radio, email, checkbox, text) -->
+        </div>
+        <div class="control-form">
+            <label>Nombre de Usuario:</label>
+            <input type="text" name="userName" id="" placeholder="texto ayuda">
+        </div>
+        <div class="control-form">
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="bday" id="">
+        </div>
+        <div class="control-form">
+            <label>Domicilio</label>
+            <input type="text" name="address" id="">
+        </div>
+        <div class="control-form">
+        <!-- combobox para seleccionar una opcion -->
+            <label>Perfil del Usuario</label>
+            <select name="perfilUsuario" id="">
+                <option value="comprador">Comprador</option>
+                <option value="vendendor">Vendedor</option>
+                <!-- value es lo que relaciona con el backend -->
+            </select>
+        </div>
+        <div>
+            <label >Intereses</label>
+            <input type="checkbox" name="electro" id="">Electro;
+            <input type="checkbox" name="moda" id="">Moda;
+            <input type="checkbox" name="hogar" id="">Hogar;
+            <input type="checkbox" name="jugeteria" id="">Jugueteria;
+            <input type="checkbox" name="vidaSana" id="">Vida Sana;
+        </div>
+        <div class="control-form">
+            <label >Foto Usuario</label>
+            <input type="file" name="fotoUsuario">
+        </div>
+        <div class="control-form">
+            <label >Contrasena</label>
+            <input type="password" name="pswrd">
+        </div>
+        <div class="control-form">
+            <label >Confirmar Contrasena</label>
+            <input type="password" name="confirmPswrd">
+        </div>
+        
+        <button type="submit">Enviar</button> <!-- envia a la ruta definida en "action" -->
+        <button type="reset">Borrar</button><!-- solo borra lo ingresado en el form, no en la base de datos -->
+    </form>
+</body>
+</html>
